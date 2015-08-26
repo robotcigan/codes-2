@@ -1,0 +1,36 @@
+//- Modal
+.modal.fade#registration(tabindex="-1" role="dialog")
+	.modal-dialog(role="document")
+		.modal-content
+			.modal-header
+				.close(data-dismiss="modal" aria-label="Close")
+					span(aria-hidden="true") &times;
+				h4 Регистрация
+			.modal-body
+				.row
+					.col-md-6
+						form.form
+							.form-group
+								label Адрес электронной почты
+								input(type="email").form-input
+							.form-group
+								label Пароль
+								input(type="password").form-input
+							.form-group
+								label Повторите пароль
+								input(type="password").form-input
+							//- .btn.btn-danger Зарегистрироваться
+							.btn.btn-simple Зарегистрироваться
+					.col-md-6
+						form.form
+							.form-group
+								label Телефон
+								input(type="text").form-input
+							.form-group
+								label E-mail
+								input(type="text").form-input
+							.form-group
+								label Введите цифры с картинки
+								input(type="text").form-input
+							a(href="#") Обновить
+							img(src="images/numbers.png", alt="")

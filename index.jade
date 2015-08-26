@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		title Стройком
+		include libs.jade
+		link(rel="stylesheet", href="css/ion.rangeSlider.css")
+		link(rel="stylesheet", href="css/ion.rangeSlider.skinFlat.css")
+		link(rel="stylesheet", href="css/pickmeup.css")
+	body
+	
+		include header.jade
+
+		#slider.carousel.slide(data-ride="carousel")
+			.carousel-inner
+				.item.active
+					img(alt="First slide" src="images/slide-1.jpg")
+					.container
+						.carousel-caption
+							.row
+								.col-md-9
+									h1 Жилой комплекс «Три кита»
+									.padding100
+										h4.top10 Новый жилой комплекс «ТРИ КИТА» сегодня дарит незыблемое ощущение стабильности и комфорт.
+										br
+										br
+										a.dashed.text-white(href="#") Сайт комплекса 
+								.col-md-3
+									img.top50(src="images/slider-sub-image.png", alt="")
+
+				.item
+					img(alt="Second slide" src="images/slide-1.jpg")
+					.container
+						.carousel-caption
+							.row
+								.col-md-9
+									h1 Жилой комплекс «Три кита»
+									.padding100
+										h4.top10 Новый жилой комплекс «ТРИ КИТА» сегодня дарит незыблемое ощущение стабильности и комфорт.
+										br
+										br
+										a.dashed.text-white(href="#") Сайт комплекса 
+								.col-md-3
+									img.top50(src="images/slider-sub-image.png", alt="")
+
+		.container
+
+			.row.top25
+				.col-md-8
+					.search-engine
+						.row
+							.col-md-8
+								h2 Подберите квартиру себе и своим близким
+							.col-md-4.text-right
+								a.bid(href="#") Оставить заявку
+						form.form-inline
+							.row
+								.col-md-4
+									label Стоимость
+									.form-group
+										input.form-control(type="text" placeholder="от")
+										span  - 
+										input.form-control(type="text" placeholder="до")
+								.col-md-3
+									label Количество комнат
+									.form-group
+										select.form-control
+											option 1
+											option 2
+											option 3
+								.col-md-5.dates
+									label.text-left Дата ввода в эксплуатацию
+									.form-group
+										input.form-control.another-width.datepicker(type="text")
+										span  - 
+									.form-group
+										input.form-control.datepicker(type="text")
+						
+							.sliders
+								.row
+									.col-md-4
+										label Этаж
+										input#slider_flat.slide(type="text")
+									.col-md-4
+										label Площадь
+										input#slider_square.slide(type="text")
+									.col-md-4.text-right
+										//- .btn.btn-danger(style="margin-top: 64px;") Подобрать
+										.btn.btn-simple.btn-simple-small(style="margin-top: 61px;") Подобрать
+									
+									
+				.info-block.col-md-4
+					h3 Продажа квартир от застройщика
+					p.top25 Строительная компания «Стройком», созданная на базе ЖСК «Доступное жилье», существует в Краснодаре с 2012-го года. «Стройком» специализируется на возведении 16-ти и 18-ти этажных жилых домов.
+					.row.top25
+						.col-md-6
+							img(src="images/clock-white.png", alt="")
+							h4 3 года
+							p.top10 Опыт работы на рынке недвижимости
+						.col-md-6
+							img(src="images/door-white.png", alt="")
+							h4 3 года
+							p.top10 Находится в продаже
+
+		.objects.top25
+			.container
+				.row
+					.col-md-3
+						.object
+							.scale-img
+								img(src="images/object-1.jpg", alt="")
+							.object-text
+								a(href="objects_more.html")
+									h4 ЖК «Три кита»
+									p Количество зданий: 3
+									p Этажность: 17
+					.col-md-3
+						.object
+							.scale-img
+								img(src="images/object-2.jpg", alt="")
+							.object-text
+								a(href="objects_more.html")
+									h4 ЖК по ул Вавилова, 20
+									p Количество зданий: 2
+									p Этажность: 14
+					.col-md-3
+						.object
+							.scale-img
+								img(src="images/object-3.jpg", alt="")
+							.object-text
+								a(href="objects_more.html")
+									h4 ЖК «Светлый»
+									p Количество зданий: 2
+									p Этажность: 24
+					.col-md-3
+						.object
+							.scale-img
+								img(src="images/object-4.jpg", alt="")
+							.object-text
+								a(href="objects_more.html")
+									h4 ЖК по ул Вавилова,18/2
+									p Количество зданий: 1
+									p Этажность: 16
+		.partners
+			.container
+				.row
+					.col-md-3
+						h3 — Главное богатство компании - партнеры
+						h4.top10 Рука об руку, год за годом
+						br
+						a.dashed.text-grey(href="#") Все партнеры
+					.col-md-3.top25
+						a(href="#")
+							img(src="images/банк-москвы.png", alt="")
+					.col-md-3.top25
+						a(href="#")
+							img(src="images/сбербанк.png", alt="")
+					.col-md-3.top25
+						a(href="#")
+							img(src="images/втб.png", alt="")
+
+		.shares
+			.container
+				.row
+					.share.col-md-4
+						.share-img
+							.scale-img
+								img(src="images/share-1.jpg", alt="")
+						.share-text
+							h5.bg-red Внимание акция
+							h4.text-yellow Квартиры от 37 000 руб/м2
+							p В ЖК "Три кита" цена на квартиры всего от 37 000 руб/м2
+					.share.col-md-4
+						.share-img
+							.scale-img
+								img(src="images/share-2.jpg", alt="")
+						.share-text
+							h5.bg-aquamarine Внимание акция
+							h4 Квартиры от 37 000 руб/м2
+							p В ЖК "Три кита" цена на квартиры всего от 37 000 руб/м2
+					.share.col-md-4
+						.share-img
+							.scale-img
+								img(src="images/share-3.jpg", alt="")
+						.share-text
+							h5.bg-red Внимание акция
+							h4.text-yellow "Квартирный трейд ин"
+							p Стартовала акция по улучшению жилищных условий
+
+		include footer.jade
+		include enter.jade
+		include registration.jade
+		
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+		script.
+			window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js"><\/script>')	
+		script(src="js/bootstrap.min.js")
+		script(src="js/script.js")
+		script(src="js/ion.rangeSlider.min.js")
+		script(src="js/jquery.pickmeup.min.js")
+
+		script.
+			$("#slider_flat").ionRangeSlider({
+				min: 1,                        // минимальное значение
+				max: 21,                       // максимальное значение
+				from: 8,                       // предустановленное значение ОТ
+				to: 15,                        // предустановленное значение ДО
+				type: "double",                        
+				prettify: true,                 // разделять цифры пробелами 10 000
+			});
+			$("#slider_square").ionRangeSlider({
+				min: 10,                        // минимальное значение
+				max: 300,                       // максимальное значение
+				from: 50,                       // предустановленное значение ОТ
+				to: 235,                         // предустановленное значение ДО
+				step: 5,                       // шаг слайдера
+				type: "double",
+				prettify: true,                 // разделять цифры пробелами 10 000
+			});
+		script.
+			$('.datepicker').pickmeup();
+		style.
+			.footer{
+				margin-top: 0;
+			}

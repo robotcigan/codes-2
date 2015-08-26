@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Стройком</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/ion.rangeSlider.css"/>
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css"/>
+    <link rel="stylesheet" href="css/pickmeup.css"/>
+  </head>
+  <body>
+    <div class="question-div">
+      <div class="container">
+        <h2>Задайте вопрос</h2>
+        <div class="question-div-close">&times;</div>
+        <div class="top25">
+          <input type="text" class="form-input"/>
+          <div style="margin-top: -2px;" class="btn btn-simple">Отправить</div>
+        </div>
+      </div>
+    </div>
+    <div class="top-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 whole-stie"><i class="fa fa-sign-in"> </i><a href="#" data-toggle="modal" data-target="#enter" class="dashed"> Вход </a><i class="fa fa-user"> </i><a href="#" data-toggle="modal" data-target="#registration" class="dashed"> Регистрация </a><span class="separator"></span><a href="#" class="dashed"> Весь сайт </a><span class="icon-correct">&#9660;</span>
+          </div>
+          <div class="col-md-4">
+            <div class="tabs"><a href="#" class="tab">Вакансии</a><a href="partners.html" class="tab">Партнерам</a></div>
+          </div>
+          <div class="col-md-4 question">
+            <div id="question"><img src="images/question.jpg" alt=""/><a href="#" class="dashed">Задать вопрос</a></div><span class="separator"></span><img src="images/pointer.png" alt=""/><a href="#" class="dashed">Карта проезда <i class="fa fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="empty"></div>
+    <div class="main-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2"><a href="index.html" class="logo"><img src="images/logo.png" alt=""/></a></div>
+          <div style="padding-left: 0;" class="col-md-5 col-md-offset-1">
+            <div class="navigation">
+              <ul class="navs">
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="documents.html">Документы</a></li>
+                <li><a href="objects.html">Наши объекты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="shares.html">Акции</a></li>
+                <li><a href="for_realtors.html">Риелторам</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 phone">
+            <h3>+7 (861) 2-100-700</h3>
+            <div class="btn-group">
+              <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-default dropdown-toggle"><span class="dashed">Все сайты «Стройком» </span><span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Первый сайт</a></li>
+                <li><a href="#">Второй сайт</a></li>
+                <li><a href="#">Третий сайт</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="slider" data-ride="carousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active"><img alt="First slide" src="images/slide-1.jpg"/>
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="row">
+                <div class="col-md-9">
+                  <h1>Жилой комплекс «Три кита»</h1>
+                  <div class="padding100">
+                    <h4 class="top10">Новый жилой комплекс «ТРИ КИТА» сегодня дарит незыблемое ощущение стабильности и комфорт.</h4><br/><br/><a href="#" class="dashed text-white">Сайт комплекса </a>
+                  </div>
+                </div>
+                <div class="col-md-3"><img src="images/slider-sub-image.png" alt="" class="top50"/></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item"><img alt="Second slide" src="images/slide-1.jpg"/>
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="row">
+                <div class="col-md-9">
+                  <h1>Жилой комплекс «Три кита»</h1>
+                  <div class="padding100">
+                    <h4 class="top10">Новый жилой комплекс «ТРИ КИТА» сегодня дарит незыблемое ощущение стабильности и комфорт.</h4><br/><br/><a href="#" class="dashed text-white">Сайт комплекса </a>
+                  </div>
+                </div>
+                <div class="col-md-3"><img src="images/slider-sub-image.png" alt="" class="top50"/></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row top25">
+        <div class="col-md-8">
+          <div class="search-engine">
+            <div class="row">
+              <div class="col-md-8">
+                <h2>Подберите квартиру себе и своим близким</h2>
+              </div>
+              <div class="col-md-4 text-right"><a href="#" class="bid">Оставить заявку</a></div>
+            </div>
+            <form class="form-inline">
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Стоимость</label>
+                  <div class="form-group">
+                    <input type="text" placeholder="от" class="form-control"/><span> - </span>
+                    <input type="text" placeholder="до" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label>Количество комнат</label>
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-5 dates">
+                  <label class="text-left">Дата ввода в эксплуатацию</label>
+                  <div class="form-group">
+                    <input type="text" class="form-control another-width datepicker"/><span> - </span>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control datepicker"/>
+                  </div>
+                </div>
+              </div>
+              <div class="sliders">
+                <div class="row">
+                  <div class="col-md-4">
+                    <label>Этаж</label>
+                    <input id="slider_flat" type="text" class="slide"/>
+                  </div>
+                  <div class="col-md-4">
+                    <label>Площадь</label>
+                    <input id="slider_square" type="text" class="slide"/>
+                  </div>
+                  <div class="col-md-4 text-right">
+                    <div style="margin-top: 61px;" class="btn btn-simple btn-simple-small">Подобрать</div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="info-block col-md-4">
+          <h3>Продажа квартир от застройщика</h3>
+          <p class="top25">Строительная компания «Стройком», созданная на базе ЖСК «Доступное жилье», существует в Краснодаре с 2012-го года. «Стройком» специализируется на возведении 16-ти и 18-ти этажных жилых домов.</p>
+          <div class="row top25">
+            <div class="col-md-6"><img src="images/clock-white.png" alt=""/>
+              <h4>3 года</h4>
+              <p class="top10">Опыт работы на рынке недвижимости</p>
+            </div>
+            <div class="col-md-6"><img src="images/door-white.png" alt=""/>
+              <h4>3 года</h4>
+              <p class="top10">Находится в продаже</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="objects top25">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="object">
+              <div class="scale-img"><img src="images/object-1.jpg" alt=""/></div>
+              <div class="object-text"><a href="objects_more.html">
+                  <h4>ЖК «Три кита»</h4>
+                  <p>Количество зданий: 3</p>
+                  <p>Этажность: 17</p></a></div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="object">
+              <div class="scale-img"><img src="images/object-2.jpg" alt=""/></div>
+              <div class="object-text"><a href="objects_more.html">
+                  <h4>ЖК по ул Вавилова, 20</h4>
+                  <p>Количество зданий: 2</p>
+                  <p>Этажность: 14</p></a></div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="object">
+              <div class="scale-img"><img src="images/object-3.jpg" alt=""/></div>
+              <div class="object-text"><a href="objects_more.html">
+                  <h4>ЖК «Светлый»</h4>
+                  <p>Количество зданий: 2</p>
+                  <p>Этажность: 24</p></a></div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="object">
+              <div class="scale-img"><img src="images/object-4.jpg" alt=""/></div>
+              <div class="object-text"><a href="objects_more.html">
+                  <h4>ЖК по ул Вавилова,18/2</h4>
+                  <p>Количество зданий: 1</p>
+                  <p>Этажность: 16</p></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>— Главное богатство компании - партнеры</h3>
+            <h4 class="top10">Рука об руку, год за годом</h4><br/><a href="#" class="dashed text-grey">Все партнеры</a>
+          </div>
+          <div class="col-md-3 top25"><a href="#"><img src="images/банк-москвы.png" alt=""/></a></div>
+          <div class="col-md-3 top25"><a href="#"><img src="images/сбербанк.png" alt=""/></a></div>
+          <div class="col-md-3 top25"><a href="#"><img src="images/втб.png" alt=""/></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="shares">
+      <div class="container">
+        <div class="row">
+          <div class="share col-md-4">
+            <div class="share-img">
+              <div class="scale-img"><img src="images/share-1.jpg" alt=""/></div>
+            </div>
+            <div class="share-text">
+              <h5 class="bg-red">Внимание акция</h5>
+              <h4 class="text-yellow">Квартиры от 37 000 руб/м2</h4>
+              <p>В ЖК "Три кита" цена на квартиры всего от 37 000 руб/м2</p>
+            </div>
+          </div>
+          <div class="share col-md-4">
+            <div class="share-img">
+              <div class="scale-img"><img src="images/share-2.jpg" alt=""/></div>
+            </div>
+            <div class="share-text">
+              <h5 class="bg-aquamarine">Внимание акция</h5>
+              <h4>Квартиры от 37 000 руб/м2</h4>
+              <p>В ЖК "Три кита" цена на квартиры всего от 37 000 руб/м2</p>
+            </div>
+          </div>
+          <div class="share col-md-4">
+            <div class="share-img">
+              <div class="scale-img"><img src="images/share-3.jpg" alt=""/></div>
+            </div>
+            <div class="share-text">
+              <h5 class="bg-red">Внимание акция</h5>
+              <h4 class="text-yellow">"Квартирный трейд ин"</h4>
+              <p>Стартовала акция по улучшению жилищных условий</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"><small class="text-muted">© Стройком, 2001 — 2015.</small><br/><small class="text-muted">ГК «Доступное жилье»</small><br/><br/><a href="#" class="underline"><small>Карта сайта</small></a></div>
+          <div class="col-md-2 border-right"><a href="#">Стройком</a>
+            <ul class="list">
+              <li> <a href="about.html">О компании</a></li>
+              <li> <a href="for_realtors.html">Для риэлторов</a></li>
+              <li> <a href="documents.html">Документы</a></li>
+              <li> <a href="objects.html">Наши объекты</a></li>
+              <li> <a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 border-right"><a href="#">Объекты</a>
+            <ul class="list">
+              <li><a href="#">ЖК по ул. Вавилова, 18/2</a></li>
+              <li><a href="#">ЖК по ул. Вавилова, 20</a></li>
+              <li><a href="#">ЖК «Три кита»</a></li>
+              <li><a href="#">ЖК «Солнечный»</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2"><a href="#"> Пресс - центр</a>
+            <ul class="list">
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="shares.html">Акции</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <div class="socials"><a href="https://facebook.com" target="_blank">
+                <div class="social-div">
+                  <div class="social-visible"><i class="fa fa-facebook"></i></div>
+                  <div class="social-hidden"><i class="fa fa-facebook"></i></div>
+                </div></a><a href="https://vk.com" target="_blank">
+                <div class="social-div">
+                  <div class="social-visible"><i class="fa fa-vk"></i></div>
+                  <div class="social-hidden"><i class="fa fa-vk"></i></div>
+                </div></a><a href="https://ok.ru" target="_blank">
+                <div class="social-div">
+                  <div class="social-visible"><i class="fa fa-google-plus"></i></div>
+                  <div class="social-hidden"><i class="fa fa-google-plus"></i></div>
+                </div></a></div>
+            <h4 class="top25">+7 /861/ 2-100-700</h4>
+            <p class="adress">Россия, г. Краснодар, ул. Гаврилова, 117, 4 этаж, офис 3</p>
+            <div class="top10"><img src="images/pointer.png" alt=""/><a href="#" class="dashed">Карта проезда &rarr;</a></div>
+          </div>
+          <div class="col-md-5"><a href="https://webformula.pro" target="_blank"><img src="images/wf.png" alt="" class="wf-logo"/><span>- Разработка сайта </span><span class="underline">Webformula</span></a></div>
+          <div class="col-md-3"><a href="#"><img src="images/rating.png" alt=""/></a></div>
+        </div>
+      </div>
+    </div>
+    <div id="enter" tabindex="-1" role="dialog" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></div>
+            <h4>Авторизаиця </h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <form class="form">
+                  <div class="form-group">
+                    <label>Адрес электронной почты</label>
+                    <input type="text" class="form-input"/>
+                  </div>
+                  <div class="form-group">
+                    <label>Пароль</label>
+                    <input type="password" class="form-input"/>
+                  </div>
+                  <div class="checkbox">
+                    <label style="float: left;">
+                      <input type="checkbox"/>Запомнить меня
+                    </label>
+                  </div><a href="#" style="float: right;">Забыли пароль?</a>
+                  <div class="clear-fix"></div>
+                  <div class="btn btn-simple">Войти</div>
+                </form>
+              </div>
+              <div class="col-md-6">
+                <h4 class="top25">Вход через социальную сеть</h4>
+                <div class="socials top10"><a href="https://facebook.com" target="_blank">
+                    <div class="social-div">
+                      <div class="social-visible"><i class="fa fa-facebook"></i></div>
+                    </div></a><a href="https://vk.com" target="_blank">
+                    <div class="social-div">
+                      <div class="social-visible"><i class="fa fa-vk"></i></div>
+                    </div></a><a href="https://google.ru" target="_blank">
+                    <div class="social-div">
+                      <div class="social-visible"><i class="fa fa-google-plus"></i></div>
+                    </div></a></div>
+                <div class="checkbox top10">
+                  <label>
+                    <input type="checkbox"/>Получать рассылку акиций и новостей
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="registration" tabindex="-1" role="dialog" class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></div>
+            <h4>Регистрация</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <form class="form">
+                  <div class="form-group">
+                    <label>Адрес электронной почты</label>
+                    <input type="email" class="form-input"/>
+                  </div>
+                  <div class="form-group">
+                    <label>Пароль</label>
+                    <input type="password" class="form-input"/>
+                  </div>
+                  <div class="form-group">
+                    <label>Повторите пароль</label>
+                    <input type="password" class="form-input"/>
+                  </div>
+                  <div class="btn btn-simple">Зарегистрироваться</div>
+                </form>
+              </div>
+              <div class="col-md-6">
+                <form class="form">
+                  <div class="form-group">
+                    <label>Телефон</label>
+                    <input type="text" class="form-input"/>
+                  </div>
+                  <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="text" class="form-input"/>
+                  </div>
+                  <div class="form-group">
+                    <label>Введите цифры с картинки</label>
+                    <input type="text" class="form-input"/>
+                  </div><a href="#">Обновить</a><img src="images/numbers.png" alt=""/>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js"><\/script>')	</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.pickmeup.min.js"></script>
+    <script>
+      $("#slider_flat").ionRangeSlider({
+      	min: 1,                        // минимальное значение
+      	max: 21,                       // максимальное значение
+      	from: 8,                       // предустановленное значение ОТ
+      	to: 15,                        // предустановленное значение ДО
+      	type: "double",                        
+      	prettify: true,                 // разделять цифры пробелами 10 000
+      });
+      $("#slider_square").ionRangeSlider({
+      	min: 10,                        // минимальное значение
+      	max: 300,                       // максимальное значение
+      	from: 50,                       // предустановленное значение ОТ
+      	to: 235,                         // предустановленное значение ДО
+      	step: 5,                       // шаг слайдера
+      	type: "double",
+      	prettify: true,                 // разделять цифры пробелами 10 000
+      });
+    </script>
+    <script>$('.datepicker').pickmeup();</script>
+    <style>
+      .footer{
+      	margin-top: 0;
+      }
+    </style>
+  </body>
+</html>

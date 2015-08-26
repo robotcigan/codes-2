@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		title Стройком
+		include libs.jade
+	body
+	
+		include header.jade
+
+		.container.roboto
+			.row
+				.col-md-3.left-block
+					.objects-location
+						h4.dashed.text-white Расположение объектов компании
+						ul
+							li
+								a(href="#") Введеные в эксплуатацию
+							li
+								a(href="#") Строящиеся
+							li
+								a(href="#") Отдел продаж
+						a(href="#")
+							.btn.btn-secondary.width100 Посмотреть
+					.news
+						h4.text-center Пресс-центр
+						//- tabs
+						ul.nav.nav-tabs(role="tablist")
+							li.active(role="presentation")
+								a(href="#tab-news" aria-controls="tab-news"  role="tab" data-toggle="tab") Новости
+							li(role="presentation")
+								a(href="#tab-shares" aria-controls="tab-shares" role="tab" data-toggle="tab") Акции
+						.tab-content
+							div(role="tabpanel" class="tab-pane active" id="tab-news")
+								.new
+									a(href="#") 
+										h4 Ипотека «ВТБ 24»
+									small Квартиры в жк «три-кита» теперь можно приобрести в ипотеку при поддержке «втб24»
+								.new
+									a(href="#") 
+										h4 Аккредитация «Новые Адреса»
+									small Квартиры в жк «три-кита» теперь можно приобрести в ипотеку при поддержке «втб24»
+							div(role="tabpanel" class="tab-pane" id="tab-shares") ...
+					.banner-slider
+						img(src="images/door.jpg", alt="")
+						.banner-slider-content
+							.banner-slider-content-img
+								img(src="images/банк-москвы-лого.png", alt="")
+							.banner-slider-content-text
+								a(href="#" target="_blank") Ипотечное кредитование от банка Москвы
+
+				.col-md-6.about
+					a.dashed(href="index.html") 
+						| <i class="fa fa-home"></i> Главная 
+					span.text-muted | Контактная информация
+					h2.title Контактная информация
+					iframe.map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1409.2784343245542!2d38.98559454232789!3d45.054213536547145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f045810616d033%3A0x51583260fcace609!2z0YPQuy4g0JPQsNCy0YDQuNC70L7QstCwINCfLtCcLiwgMTE3LCDQmtGA0LDRgdC90L7QtNCw0YAsINCa0YDQsNGB0L3QvtC00LDRgNGB0LrQuNC5INC60YDQsNC5LCAzNTAwMjA!5e0!3m2!1sru!2sru!4v1437633244916" frameborder="0" style="border:0" allowfullscreen)					
+					h5.top25 Реквизиты компании
+					h5.top25 Адрес офиса: г. Краснодар, ул. Гаврилова, 117, 4 этаж, офис 3
+					.row.top25
+						.col-md-6
+							h5 Единый многоканальный телефон отдела продаж:
+							p +7 (861) 2 100 700; +7(960) 477 79 97
+							h5.top10 Электронная почта:
+							a(href="http://info@stroycom.org" target="_blank") info@stroycom.org
+						.col-md-6
+							h5 По вопросам работы с агентствами недвижимости обращайтесь по телефону:
+							p +7 (861) 2 100 700; +7(960) 477 79 97
+							h5 По вопросам аренды офисных помещений обращайтесь по телефону:
+							p +7 (953) 094 17 59
+					p Наши сотрудники ответят на любые интересующие Вас вопросы!
+					form.form.form-contacts
+						.row
+							.col-md-6
+								label Имя
+								input.form-input(type="text")
+								label E-mail
+								input.form-input(type="text")
+							.col-md-6
+								label Сообщение
+								textarea.form-input
+						.btn.btn-simple.top25 Отправить
+				.col-md-3.right-block
+					.call-center
+						.img-box.text-center.top10
+							img(src="images/callcenter.jpg", alt="")
+						h4 Выберите удобное время звонка
+						form.form-inline
+							.row
+								.col-md-6.form-group
+									input.calling-form(type="text" placeholder="сегодня")
+								.col-md-6.form-group
+									input.calling-form(type="text" placeholder="14:00")
+							input.calling-form.top10(type="text" placeholder="Введите ваш номер")
+						a(href="#")
+							.btn.btn-simple.width100 Перезвоните мне
+						.feedback
+							a.dashed(href="#") Обратная связь
+					.short-info
+						.row
+							.col-md-2.short-info-ico
+								img(src="images/i.png", alt="")
+							.col-md-10
+								p Она была создана в 2012 году на основе многолетнего опыта и достижений ЖСК «Доступное жилье». В течение 9 лет своей деятельности организация зарекомендовала себя как динамично развивающаяся компания
+					.counts
+						h4 Жилой комплекс в цифрах
+						.count
+							img(src="images/clock.png", alt="")
+							p Старт проекта
+							h4.text-red 2015
+						.count
+							img(src="images/building.png", alt="")
+							p Этажность
+							h4.text-red 17
+						.count
+							img(src="images/door.png", alt="")
+							p Все квартир
+							h4.text-red 4720
+						.count
+							img(src="images/hook.png", alt="")
+							p Строится домов
+							h4.text-red 2
+					.commercial
+						.commercial-img
+							img(src="images/commercial-1.jpg", alt="")
+						.commercial-text
+							h3 ЖК «Светлый»
+							h3.top10 8 861 2-100-700
+							img.top10(src="images/кредитование.png", alt="")
+
+
+
+		include footer.jade
+		include enter.jade
+		include registration.jade
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+		script.
+			window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js"><\/script>')	
+		script(src="js/bootstrap.min.js")
+		script(src="js/script.js")

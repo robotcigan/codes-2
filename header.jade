@@ -1,0 +1,70 @@
+.question-div
+	.container
+		h2 Задайте вопрос
+		.question-div-close
+			&times;
+		.top25
+			input.form-input(type="text")
+			.btn.btn-simple(style="margin-top: -2px;") Отправить
+.top-header
+	.container
+		.row
+			.col-md-4.whole-stie
+				i.fa.fa-sign-in 
+				a.dashed(href="#" data-toggle="modal" data-target="#enter")  Вход 
+				i.fa.fa-user 
+				a.dashed(href="#" data-toggle="modal" data-target="#registration")  Регистрация 
+				span.separator
+				//- span &#9825; 
+				a.dashed(href="#")  Весь сайт 
+				span.icon-correct &#9660;
+			.col-md-4
+				.tabs
+					a.tab(href="#") Вакансии
+					a.tab(href="partners.html") Партнерам
+			.col-md-4.question
+				#question
+					img(src="images/question.jpg", alt="")
+					a.dashed(href="#") Задать вопрос
+				span.separator
+				img(src="images/pointer.png", alt="")
+				//- a.dashed(href="#") Карта проезда &rarr;
+				a.dashed(href="#") Карта проезда 
+					i.fa.fa-angle-right
+.empty
+.main-header
+	.container
+		.row
+			.col-md-2
+				a.logo(href="index.html")
+					img(src="images/logo.png", alt="")
+			.col-md-5.col-md-offset-1(style="padding-left: 0;")
+				.navigation
+					ul.navs
+						li
+							a(href="about.html") О компании
+						li
+							a(href="documents.html") Документы
+						li
+							a(href="objects.html") Наши объекты
+						li
+							a(href="contacts.html") Контакты
+						li
+							a(href="news.html") Новости
+						li
+							a(href="shares.html") Акции
+						li
+							a(href="for_realtors.html") Риелторам
+			.col-md-4.phone
+				h3 +7 (861) 2-100-700
+				.btn-group
+					button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+						span.dashed Все сайты «Стройком» 
+						span.caret
+					ul.dropdown-menu
+						li
+							a(href="#") Первый сайт
+						li
+							a(href="#") Второй сайт
+						li
+							a(href="#") Третий сайт

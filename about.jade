@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		title Стройком
+		include libs.jade
+	body
+	
+		include header.jade
+
+		.container.roboto
+			.row
+				.col-md-3.left-block
+					.objects-location
+						h4.dashed.text-white Расположение объектов компании
+						ul
+							li
+								a(href="#") Введеные в эксплуатацию
+							li
+								a(href="#") Строящиеся
+							li
+								a(href="#") Отдел продаж
+						a(href="#")
+							.btn.btn-secondary.width100 Посмотреть
+					.news
+						h4.text-center Пресс-центр
+						//- tabs
+						ul.nav.nav-tabs(role="tablist")
+							li.active(role="presentation")
+								a(href="#tab-news" aria-controls="tab-news"  role="tab" data-toggle="tab") Новости
+							li(role="presentation")
+								a(href="#tab-shares" aria-controls="tab-shares" role="tab" data-toggle="tab") Акции
+						.tab-content
+							div(role="tabpanel" class="tab-pane active" id="tab-news")
+								.new
+									a(href="#") 
+										h4 Ипотека «ВТБ 24»
+									small Квартиры в жк «три-кита» теперь можно приобрести в ипотеку при поддержке «втб24»
+								.new
+									a(href="#") 
+										h4 Аккредитация «Новые Адреса»
+									small Квартиры в жк «три-кита» теперь можно приобрести в ипотеку при поддержке «втб24»
+							div(role="tabpanel" class="tab-pane" id="tab-shares") ...
+
+				.col-md-6.about
+					a.dashed(href="index.html")
+						| <i class="fa fa-home"></i> Главная 
+					span.text-muted | Строительная компания «Стройком»
+					h2.title Строительная компания «Стройком»
+					p <strong>Строительная компания «Стройком»</strong> входит в группу компаний ООО «Доступное жилье». Она была создана в 2012 году на основе многолетнего опыта и достижений ЖСК «Доступное жилье». В течение 9 лет своей деятельности организация зарекомендовала себя как динамично развивающаяся компания, специализирующаяся на строительстве и продаже квартир в многоэтажных жилых домах.
+					p За эти годы на ее счету <strong>более 40 сданных и заселенных новостроек</strong>, где архитекторы предусмотрели все необходимое для комфортной жизни. Детские и спортивные площадки, автопаркинг, продуктовые и хозяйственные магазины, аптеки в шаговой доступности – такая инфраструктура, по отзывам жильцов, полностью оправдывает их выбор и отвечает потребностям. 
+					p Организация решила не останавливаться на достигнутом и для дальнейшего развития на рынке недвижимости стала строительной компанией «Стройком». И в новом статусе начала возведение уже 16- и 18-этажных красавцев. Мы заботимся о вашем уюте и безопасности, поэтому строим жилье по монолитно-кирпичным технологиям. В настоящее время успешно реализуется возведение двух жилых комплексов по улице Московской и двух – по Вавилова.
+					p <strong>Надежность и доступность для компании «Стройком»</strong> – это не просто стратегическая цель или миссия, благодаря сотрудничеству с ведущими федеральными и региональными банками это реальность. Не повышая стоимости квадратного метра, компания работает со всеми государственными программами субсидий на покупку жилья: материнским капиталом, военной ипотекой, «Молодая семья» и.д. Одним словом – мы настроены на то, чтобы вас удивлять!
+				.col-md-3.right-block
+					.call-center.shadow-effect
+						.img-box.text-center.top10
+							img(src="images/callcenter.jpg", alt="")
+						h4 Выберите удобное время звонка
+						form.form-inline
+							.row
+								.col-md-6.form-group
+									input.calling-form(type="text" placeholder="сегодня")
+								.col-md-6.form-group
+									input.calling-form(type="text" placeholder="14:00")
+							input.calling-form.top10(type="text" placeholder="Введите ваш номер")
+						a(href="#")
+							.btn.btn-simple.width100 Перезвоните мне
+						.feedback
+							a.dashed(href="#") Обратная связь
+
+		include footer.jade
+		include enter.jade
+		include registration.jade
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+		script.
+			window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js"><\/script>')	
+		script(src="js/bootstrap.min.js")
+		script(src="js/script.js")

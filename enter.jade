@@ -1,0 +1,45 @@
+//- Modal
+.modal.fade#enter(tabindex="-1" role="dialog")
+	.modal-dialog(role="document")
+		.modal-content
+			.modal-header
+				.close(data-dismiss="modal" aria-label="Close")
+					span(aria-hidden="true") &times;
+				h4 Авторизаиця 
+			.modal-body
+				.row
+					.col-md-6
+						form.form
+							.form-group
+								label Адрес электронной почты
+								input(type="text").form-input
+							.form-group
+								label Пароль
+								input(type="password").form-input 
+							.checkbox
+								label(style="float: left;")
+									input(type="checkbox")
+									| Запомнить меня
+							a(href="#" style="float: right;") Забыли пароль?
+							.clear-fix
+							//- .btn.btn-danger Войти
+							.btn.btn-simple Войти
+					.col-md-6
+						h4.top25 Вход через социальную сеть
+						.socials.top10
+							a(href="https://facebook.com" target="_blank")
+								.social-div
+									.social-visible
+										i.fa.fa-facebook
+							a(href="https://vk.com" target="_blank")
+								.social-div
+									.social-visible
+										i.fa.fa-vk
+							a(href="https://google.ru" target="_blank")
+								.social-div
+									.social-visible
+										i.fa.fa-google-plus
+						.checkbox.top10
+							label
+								input(type="checkbox")
+								| Получать рассылку акиций и новостей
